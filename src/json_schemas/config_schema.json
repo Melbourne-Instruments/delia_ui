@@ -1,0 +1,38 @@
+R"(
+{
+  "$id": "melbinst_config_schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Config",
+  "type": "object",
+  "properties": {
+    "preset_id": {
+      "type": "string",
+      "description": "Current Preset ID"
+    },
+    "prev_preset_id": {
+      "type": "string",
+      "description": "Previous Preset ID"
+    },
+    "first_multifn_switch_num": {
+      "type": "number",
+      "description": "The first multi-function switch number, zero based"
+    },
+    "mod_src_num": {
+      "type": "number",
+      "description": "Currently selected modulation source"
+    },
+    "demo_mode": {
+      "type": "boolean",
+      "description": "Enable/disable demo mode"
+    },
+    "demo_mode_timeout": {
+      "type": "number",
+      "description": "Time (in seconds) the unit will enter demo mode after being idle - if demo mode enabled"
+    },
+    "system_colour": {
+      "type": "string",
+      "description": "System colour represented as RGB"
+    }
+  }
+}
+)"

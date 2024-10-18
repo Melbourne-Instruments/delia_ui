@@ -1,0 +1,9 @@
+[submodule "thirdparty/rapidjson"]
+	path = thirdparty/rapidjson
+	url = https://github.com/Tencent/rapidjson.git
+[submodule "thirdparty/spdlog"]
+	path = thirdparty/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "delia_common"]
+	path = delia_common
+	url = https://github.com/Melbourne-Instruments/delia_common.git

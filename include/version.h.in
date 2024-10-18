@@ -1,0 +1,23 @@
+/**
+ *-----------------------------------------------------------------------------
+ * Copyright (c) 2023-2024 Melbourne Instruments, Australia
+ *-----------------------------------------------------------------------------
+ * @file  version.h.in
+ * @brief Version information.
+ *-----------------------------------------------------------------------------
+ */
+#ifndef _VERSION_H
+#define _VERSION_H
+
+// Version
+#define MONIQUE_UI_MAJOR_VERSION   1
+#define MONIQUE_UI_MINOR_VERSION   0
+#define MONIQUE_UI_PATCH_VERSION   6
+
+// If a BETA release define here
+//#define MONIQUE_UI_BETA_RELEASE
+
+// GIT commit
+#define MONIQUE_UI_GIT_COMMIT_HASH "@GIT_COMMIT_HASH@"
+
+#endif  // _VERSION_H

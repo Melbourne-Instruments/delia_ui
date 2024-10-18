@@ -1,0 +1,94 @@
+R"(
+{
+  "$id": "melbinst_param_attributes_schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Param Attributes",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "param_path": {
+        "type": "string",
+        "description": "The param path"
+      },
+      "ref": {
+        "type": "string",
+        "description": "The short reference for this param, used directly in DELIA"       
+      },
+      "preset": {
+        "type": "boolean",
+        "description": "This is a param is a preset param, default is preset"   
+      },
+      "save": {
+        "type": "boolean",
+        "description": "If this param is saved or not in the preset file, preset params only, default is saved"   
+      },
+      "display_name": {
+        "type": "string",
+        "description": "Override the plugin and show the specified name. If empty the param is never shown"        
+      },  
+      "num_positions": {
+        "type": "number",
+        "description": "This is a position param with the specified number of positions"
+      },            
+      "display_min_value": {
+        "type": "number",
+        "description": "The min range value to display"
+      },
+      "display_max_value": {
+        "type": "number",
+        "description": "The max range value to display"
+      },
+      "display_decimal_places": {
+        "type": "number",
+        "description": "The decimal places (0, 1, or 2) to display"
+      },      
+      "haptic_mode": {
+        "type": "string",
+        "description": "The haptic mode for this param"
+      },      
+      "display_strings": {
+        "type": "array",
+        "items": {
+          "string": "string",
+          "description": "String value for the specified position"
+        }
+      },
+      "value_tag": {
+        "type": "string",
+        "description": "Tag string value for all values of this param"
+      },       
+      "value_tags": {
+        "type": "array",
+        "items": {
+          "string": "string",
+          "description": "Tag string value for the specified position, for enum params"
+        }
+      },      
+      "display_as_numeric": {
+        "type": "boolean",
+        "description": "Indicates this param should always be displayed as if it is numeric"        
+      },
+      "param_list_name": {
+        "type": "string",
+        "description": "The param_list name for this param"
+      },
+      "linked_param": {
+        "type": "string",
+        "description": "Another parameter which is linked to this param"
+      },
+      "display_enum_list": {
+        "type": "boolean",
+        "description": "If this is a enum param whether it should be displayed as an enum list or not"   
+      },
+      "state_a_only_param": {
+        "type": "boolean",
+        "description": "State params only, just process the state A value, the state B is ignored"   
+      }      
+    },
+    "required": [
+        "param_path"
+    ]
+  }
+}
+)"

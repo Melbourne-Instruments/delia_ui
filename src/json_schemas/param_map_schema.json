@@ -1,0 +1,53 @@
+R"(
+{
+  "$id": "melbinst_param_map_schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Params Map",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "param_1": {
+        "type": "string",
+        "description": "The path of the first param to associate"
+      },    
+      "param_2": {
+        "type": "string",
+        "description": "The path of the second param to associate"
+      },
+      "linked_param": {
+        "type": "string",
+        "description": "Another parameter which is linked to this mapping"
+      },
+      "ui_state": {
+        "type": "string",
+        "description": "The UI state this mapping is applicable to if either param is a hardware param"
+      },
+      "group": {
+        "type": "string",
+        "description": "The name of the group is applicable if either param is a hardware param"
+      },
+      "group_param": {
+        "type": "string",
+        "description": "The path the group param to associate, handled when all group controls are active"
+      },
+      "group_default": {
+        "type": "boolean",
+        "description": "The default grouped control"
+      },                  
+      "haptic_mode": {
+        "type": "string",
+        "description": "The haptic mode if either param is a hardware param"
+      },
+      "morphable": {
+        "type": "boolean",
+        "description": "If this mapping is morphable or not, default is false"
+      }  
+    },
+    "required": [
+        "param_1",
+        "param_2" 
+    ]
+  }
+}
+)"
